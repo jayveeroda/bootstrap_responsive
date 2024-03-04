@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+nav {
+  background: #0c426e;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-weight: bolder;
+}
+
+#banner {
+  width: 90%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+#service {
+  margin-bottom: 8%;
+}
+
+#choose {
+  margin: 5%;
+}
+
+#testimonials {
+  margin-bottom: 10%;
+}
+
+.contact-btn {
+  text-decoration: none;
+  background-color: #252525;
+  width: 10%;
+}
+
+.more {
+  text-decoration: none;
+  background-color: #252525;
+  width: 10%;
+}
+
+.quality-holder {
+  background-image: url(../images/quality.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+}
+
+footer {
+  background: #252525;
+  color: white;
+}
+
+.footer-content {
+  width: 80%;
+}
+
+.contact-us .location {
+  list-style-image: url("../images/CleanCars_29.png");
+}
+
+.contact-us .call {
+  list-style-image: url("../images/CleanCars_33.png");
+}
+
+.contact-us .mail {
+  list-style-image: url("../images/CleanCars_36.png");
+}
+
+.useful ul {
+  list-style: none;
+  padding: 0;
+}
+
+.subscribe {
+  background: #0c426e;
+  color: white;
+  border: none;
+  padding: 8px;
+}

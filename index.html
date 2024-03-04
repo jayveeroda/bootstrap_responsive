@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="name" content="John Vincent E. Roda" />
+    <meta name="description" content="Responsive Website" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Car Clean</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center"
+        >
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="Logo" />
+          </a>
+          <ul class="navbar-nav d-none d-lg-flex d-xl-flex">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#quality">Quality</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#choose">Choose</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#testimonials"
+                >Testimonial</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler d-lg-none d-xl-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end d-lg-none d-xl-none"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Clean Cars
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#quality">Quality</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#choose">Choose</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonials">Testimonial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="banner" class="container-fluid d-flex align-items-center">
+        <div class="row">
+          <div
+            class="col-lg-6 my-2 col-md-12 d-flex justify-content-center flex-column"
+          >
+            <h1 class="text-center">Keep Your Car Clean Always</h1>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="text-center my-3">
+              <a href="#contact" class="contact-btn p-3 text-white"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 my-2">
+            <img
+              src="assets/images/banner1.jpeg"
+              alt="banner"
+              class="img-fluid"
+              id="imageHolder"
+            />
+            <div class="text-center">
+              <img
+                src="assets/images/arrow_02.jpg"
+                alt="arrow"
+                id="arrow_02"
+                onclick="nextImage()"
+              />
+              <img
+                src="assets/images/arrow_01.jpg"
+                alt="arrow"
+                class="my-2"
+                onclick="prevImage()"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="service">
+        <div class="container-fluid">
+          <h2 class="text-center mb-5">Our Service</h2>
+          <div class="row d-flex justify-content-center gap-5">
+            <div class="col-auto">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="assets/images/CleanCars_11.jpg"
+                  class="card-img-top"
+                  alt="service"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center fw-bold">
+                    Express Exterior
+                  </h5>
+                  <p class="card-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <a href="#" class="more text-white p-2">See More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="assets/images/CleanCars_14.jpg"
+                  class="card-img-top"
+                  alt="service"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center fw-bold">Auto Detailing</h5>
+                  <p class="card-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <a href="#" class="more text-white p-2">See More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="assets/images/CleanCars_17.jpg"
+                  class="card-img-top"
+                  alt="service"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center fw-bold">
+                    Full Service Carwash
+                  </h5>
+                  <p class="card-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <a href="#" class="more text-white p-2">See More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="quality">
+        <h2 class="text-center my-5">We're Providing Best Quality Service</h2>
+        <div
+          class="position-relative quality-holder d-flex justify-content-center align-items-center flex-column"
+        >
+          <h3 class="text-white">Clean And Quality</h3>
+          <p class="my-5 text-white w-50 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut
+            aperiam alias, molestiae quasi illum dolor debitis modi expedita,
+            tenetur ipsam consequatur sunt reiciendis perspiciatis sed rem esse
+            ratione velit.
+          </p>
+        </div>
+      </section>
+      <section id="choose">
+        <h2 class="text-center my-5">Why Choose Us?</h2>
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-center gap-5">
+            <div class="col-auto">
+              <div class="card" style="width: 18rem">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Trusted Service</h5>
+
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dicta inventore molestias voluptatem at quia quae illo
+                    deleniti quas autem veniam quisquam neque fuga maiores velit
+                    eos ducimus, unde omnis aliquid!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="card" style="width: 18rem">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Talented Workers</h5>
+
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dicta inventore molestias voluptatem at quia quae illo
+                    deleniti quas autem veniam quisquam neque fuga maiores velit
+                    eos ducimus, unde omnis aliquid!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="card" style="width: 18rem">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Organic Products</h5>
+
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dicta inventore molestias voluptatem at quia quae illo
+                    deleniti quas autem veniam quisquam neque fuga maiores velit
+                    eos ducimus, unde omnis aliquid!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h2 class="text-center my-5">Testimonial</h2>
+        <div class="w-75 mx-auto position-relative">
+          <img
+            src="assets/images/arrow_02.jpg"
+            alt="arrow"
+            class="position-absolute top-50 start-0 translate-middle"
+          />
+          <div class="card w-75 mx-auto">
+            <div class="container-fluid">
+              <div class="row p-3">
+                <div class="col-lg-2 col-md-12 text-center">
+                  <img src="assets/images/CleanCars_25.jpg" alt="testimonial" />
+                </div>
+                <div class="col-lg-10 col-md-12 text-break">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Omnis, modi nisi quasi exercitationem labore neque excepturi
+                  quos voluptates doloribus ratione dolorum. Fugiat optio,
+                  nostrum provident nemo qui inventore exercitationem atque?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Omnis, modi nisi quasi exercitationem labore neque excepturi
+                  quos voluptates doloribus ratione dolorum.
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="assets/images/arrow_01.jpg"
+            alt="arrow"
+            class="position-absolute top-50 start-100 translate-middle"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="mt-5" id="contact">
+      <div class="container-xl mx-auto footer-content">
+        <div class="row py-5 d-flex justify-content-center">
+          <div
+            class="my-3 col-lg-3 col-md-6 col-sm-12 contact-us d-flex align-items-center flex-column"
+          >
+            <h6>Contact Us</h6>
+            <ul class="lh-lg">
+              <li class="location">Location</li>
+              <li class="call">Call +0123456789</li>
+              <li class="mail">sample@gmail.com</li>
+            </ul>
+          </div>
+          <div
+            class="my-3 col-lg-3 col-md-6 col-sm-12 d-flex align-items-center flex-column useful"
+          >
+            <h6>Useful links</h6>
+            <ul class="lh-lg">
+              <li><a href="#">Home</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#quality">Quality</a></li>
+              <li><a href="#choose">Choose</a></li>
+              <li><a href="#testimonials">Testimonial</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div
+            class="my-3 col-lg-3 col-md-6 col-sm-12 d-flex align-items-center flex-column"
+          >
+            <h6>Opening Time</h6>
+            <p>Mon : 07:00am to 09:00pm</p>
+            <p>Mon : 07:00am to 09:00pm</p>
+            <p>Mon : 07:00am to 09:00pm</p>
+          </div>
+          <div
+            class="my-3 col-lg-3 col-md-6 col-sm-12 d-flex align-items-center flex-column"
+          >
+            <h6>Newsletter</h6>
+            <form action="#" method="">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter Your Email"
+                required
+              />
+              <button type="submit" class="subscribe mt-2">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="text-center pb-5">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="assets/images/CleanCars_40.png" alt="icon"
+          /></a>
+          <a href="https://twitter.com/?lang=en" target="_blank"
+            ><img src="assets/images/CleanCars_42.png" alt="icon"
+          /></a>
+          <a href="https://www.linkedin.com/login" target="_blank"
+            ><img src="assets/images/CleanCars_44.png" alt="icon"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="assets/images/CleanCars_46.png" alt="icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/bootstrap.js"></script>
+    <script>
+      var currentImage = 1;
+      var totalImages = 3;
+
+      function prevImage() {
+        currentImage = ((currentImage - 3 + totalImages) % totalImages) + 1;
+        updateImage();
+      }
+
+      function nextImage() {
+        currentImage = (currentImage % totalImages) + 1;
+        updateImage();
+      }
+
+      function updateImage() {
+        var imageHolder = document.getElementById("imageHolder");
+        imageHolder.src = "assets/images/banner" + currentImage + ".jpeg";
+      }
+
+      function toggleMenu() {
+        var menu = document.querySelector(".navbar-nav");
+        menu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
