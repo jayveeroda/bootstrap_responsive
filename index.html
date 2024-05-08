@@ -1,611 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="name" content="John Vincent E. Roda" />
-    <meta name="description" content="Responsive Website" />
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>Car Clean</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div
-          class="container d-flex justify-content-between align-items-center"
-        >
-          <a class="navbar-brand" href="#">
-            <img src="assets/images/logo.png" alt="Logo" />
-          </a>
-          <ul class="navbar-nav d-none d-lg-flex d-xl-flex">
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#service">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#quality">Quality</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#choose">Choose</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#testimonials"
-                >Testimonial</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#contact">Contact Us</a>
-            </li>
-          </ul>
-          <button
-            class="navbar-toggler d-lg-none d-xl-none border"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end d-lg-none d-xl-none"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Clean Cars
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#service">Service</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#quality">Quality</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#choose">Choose</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#testimonials">Testimonial</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section
-        id="banner"
-        class="container-fluid d-flex align-items-center vh-75"
-      >
-        <div class="row">
-          <div
-            class="col-lg-6 my-5 col-md-12 d-flex justify-content-center flex-column"
-          >
-            <h1 class="text-center">Keep Your Car Clean Always</h1>
-            <p class="text-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-              illum itaque cum amet fugiat, temporibus beatae tenetur minus
-              praesentium dolore incidunt consequuntur nostrum dolorum repellat
-              magnam rem rerum, illo quos.
-            </p>
-            <div class="text-center my-3">
-              <a href="#contact" class="contact-btn p-3 text-white"
-                >Contact Us</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12 my-2 text-center">
-            <div
-              id="carouselAutoplay"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="assets/images/banner2.jpeg"
-                    class="img-fluid"
-                    alt="banner2"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/images/banner3.jpeg"
-                    class="img-fluid"
-                    alt="banner3"
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselAutoplay"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselAutoplay"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="service">
-        <div class="container-fluid">
-          <h2 class="text-center mb-5">Our Service</h2>
-          <div class="row d-flex justify-content-center gap-5">
-            <div class="col-auto">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="assets/images/CleanCars_11.jpg"
-                  class="card-img-top"
-                  alt="service"
-                />
-                <div class="card-body text-center">
-                  <h5 class="card-title text-center fw-bold">
-                    Express Exterior
-                  </h5>
-                  <p class="card-text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                  <button
-                    class="more text-white p-2"
-                    data-bs-toggle="modal"
-                    data-bs-target="#seemore_1"
-                  >
-                    See More
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="assets/images/CleanCars_14.jpg"
-                  class="card-img-top"
-                  alt="service"
-                />
-                <div class="card-body text-center">
-                  <h5 class="card-title text-center fw-bold">Auto Detailing</h5>
-                  <p class="card-text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                  <button
-                    class="more text-white p-2"
-                    data-bs-toggle="modal"
-                    data-bs-target="#seemore_2"
-                  >
-                    See More
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="assets/images/CleanCars_17.jpg"
-                  class="card-img-top"
-                  alt="service"
-                />
-                <div class="card-body text-center">
-                  <h5 class="card-title text-center fw-bold">
-                    Full Service Carwash
-                  </h5>
-                  <p class="card-text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                  <button
-                    class="more text-white p-2"
-                    data-bs-toggle="modal"
-                    data-bs-target="#seemore_3"
-                  >
-                    See More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="quality">
-        <h2 class="text-center my-5">We're Providing Best Quality Service</h2>
-        <div
-          class="position-relative quality-holder d-flex justify-content-center align-items-center flex-column"
-        >
-          <h3 class="text-white">Clean And Quality</h3>
-          <p class="my-5 text-white w-50 text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut
-            aperiam alias, molestiae quasi illum dolor debitis modi expedita,
-            tenetur ipsam consequatur sunt reiciendis perspiciatis sed rem esse
-            ratione velit.
-          </p>
-        </div>
-      </section>
-      <section id="choose">
-        <h2 class="text-center my-5">Why Choose Us?</h2>
-        <div class="container-fluid">
-          <div class="row d-flex justify-content-center gap-5">
-            <div class="col-auto">
-              <div class="card" style="width: 18rem">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Trusted Service</h5>
 
-                  <p class="card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Dicta inventore molestias voluptatem at quia quae illo
-                    deleniti quas autem veniam quisquam neque fuga maiores velit
-                    eos ducimus, unde omnis aliquid!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="card" style="width: 18rem">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Talented Workers</h5>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="name" content="John Vincent E. Roda" />
+  <meta name="description" content="Responsive Website" />
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Car Clean</title>
+</head>
 
-                  <p class="card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Dicta inventore molestias voluptatem at quia quae illo
-                    deleniti quas autem veniam quisquam neque fuga maiores velit
-                    eos ducimus, unde omnis aliquid!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="card" style="width: 18rem">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Organic Products</h5>
-
-                  <p class="card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Dicta inventore molestias voluptatem at quia quae illo
-                    deleniti quas autem veniam quisquam neque fuga maiores velit
-                    eos ducimus, unde omnis aliquid!
-                  </p>
-                </div>
-              </div>
-            </div>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.png" alt="Logo" />
+        </a>
+        <ul class="navbar-nav d-none d-lg-flex d-xl-flex">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#quality">Quality</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#choose">Choose</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#testimonials">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <button class="navbar-toggler d-lg-none d-xl-none border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end d-lg-none d-xl-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Clean Cars
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-        </div>
-      </section>
-
-      <section id="testimonials">
-        <h2 class="text-center my-5">Testimonial</h2>
-        <div class="w-75 mx-auto">
-          <div class="card mx-auto">
-            <div class="container-fluid">
-              <div class="row p-3">
-                <div class="col-lg-3 col-md-12 text-center">
-                  <img
-                    src="assets/images/CleanCars_25.jpg"
-                    class="img-thumbnail"
-                    alt="testimonial"
-                  />
-                </div>
-                <div class="col-lg-9 col-md-12 my-2">
-                  <p class="text-wrap">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Omnis, modi nisi quasi exercitationem labore neque excepturi
-                    quos voluptates doloribus ratione dolorum. Fugiat optio,
-                    nostrum provident nemo qui inventore exercitationem atque?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Omnis, modi nisi quasi exercitationem labore neque excepturi
-                    quos voluptates doloribus ratione dolorum. 3
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center my-5">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#">Previous</a>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
               </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#quality">Quality</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#choose">Choose</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
             </ul>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer class="mt-5" id="contact">
-      <div class="container-xl mx-auto footer-content">
-        <div class="row py-5 d-flex justify-content-center">
-          <div
-            class="my-3 col-lg-3 col-md-6 col-sm-12 contact-us d-flex align-items-center flex-column"
-          >
-            <h6>Contact Us</h6>
-            <ul class="lh-lg">
-              <li class="location">Location</li>
-              <li class="call">Call +0123456789</li>
-              <li class="mail">sample@gmail.com</li>
-            </ul>
-          </div>
-          <div
-            class="my-3 col-lg-3 col-md-6 col-sm-12 d-flex align-items-center flex-column useful"
-          >
-            <h6>Useful links</h6>
-            <ul class="lh-lg">
-              <li><a href="#">Home</a></li>
-              <li><a href="#service">Services</a></li>
-              <li><a href="#quality">Quality</a></li>
-              <li><a href="#choose">Choose</a></li>
-              <li><a href="#testimonials">Testimonial</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-            </ul>
-          </div>
-          <div
-            class="my-3 col-lg-3 col-md-6 col-sm-12 d-flex align-items-center flex-column"
-          >
-            <h6>Opening Time</h6>
-            <p>Mon : 07:00am to 09:00pm</p>
-            <p>Mon : 07:00am to 09:00pm</p>
-            <p>Mon : 07:00am to 09:00pm</p>
-          </div>
-          <div
-            class="my-3 col-lg-3 col-md-6 col-sm-12 d-flex align-items-center flex-column"
-          >
-            <h6>Newsletter</h6>
-            <form action="#" method="">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="form-control"
-                placeholder="Enter Your Email"
-                required
-              />
-              <div class="text-center">
-                <button type="submit" class="subscribe mt-2">Subscribe</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="text-center pb-5">
-          <a href="https://www.facebook.com/" target="_blank"
-            ><img src="assets/images/CleanCars_40.png" alt="icon"
-          /></a>
-          <a href="https://twitter.com/?lang=en" target="_blank"
-            ><img src="assets/images/CleanCars_42.png" alt="icon"
-          /></a>
-          <a href="https://www.linkedin.com/login" target="_blank"
-            ><img src="assets/images/CleanCars_44.png" alt="icon"
-          /></a>
-          <a href="https://www.instagram.com/" target="_blank"
-            ><img src="assets/images/CleanCars_46.png" alt="icon"
-          /></a>
         </div>
       </div>
-    </footer>
+    </nav>
+  </header>
+  <main>
+    <section id="banner" class="container-fluid d-flex align-items-center vh-75">
+      <div class="row">
+        <div class="col-lg-6 my-5 col-md-12 d-flex justify-content-center flex-column">
+          <h1 class="text-center">Keep Your Car Clean Always</h1>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+            illum itaque cum amet fugiat, temporibus beatae tenetur minus
+            praesentium dolore incidunt consequuntur nostrum dolorum repellat
+            magnam rem rerum, illo quos.
+          </p>
+          <div class="text-center my-3">
+            <a href="#contact" class="contact-btn p-3 text-white">Contact Us</a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 my-2 text-center">
+          <div id="carouselAutoplay" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/banner2.jpeg" class="img-fluid" alt="banner2" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/banner3.jpeg" class="img-fluid" alt="banner3" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplay" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplay" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="service">
+      <div class="container-fluid">
+        <h2 class="text-center mb-5">Our Service</h2>
+        <div class="row d-flex justify-content-center gap-5">
+          <div class="col-auto">
+            <div class="card" style="width: 18rem">
+              <img src="assets/images/CleanCars_11.jpg" class="card-img-top" alt="service" />
+              <div class="card-body text-center">
+                <h5 class="card-title text-center fw-bold">
+                  Express Exterior
+                </h5>
+                <p class="card-text">
+                  It is a long established fact that a reader will be
+                  distracted by the readable content of a page when looking at
+                  its layout.
+                </p>
+                <button class="more text-white p-2" data-bs-toggle="modal" data-bs-target="#seemore_1">
+                  See More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="card" style="width: 18rem">
+              <img src="assets/images/CleanCars_14.jpg" class="card-img-top" alt="service" />
+              <div class="card-body text-center">
+                <h5 class="card-title text-center fw-bold">Auto Detailing</h5>
+                <p class="card-text">
+                  It is a long established fact that a reader will be
+                  distracted by the readable content of a page when looking at
+                  its layout.
+                </p>
+                <button class="more text-white p-2" data-bs-toggle="modal" data-bs-target="#seemore_2">
+                  See More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="card" style="width: 18rem">
+              <img src="assets/images/CleanCars_17.jpg" class="card-img-top" alt="service" />
+              <div class="card-body text-center">
+                <h5 class="card-title text-center fw-bold">
+                  Full Service Carwash
+                </h5>
+                <p class="card-text">
+                  It is a long established fact that a reader will be
+                  distracted by the readable content of a page when looking at
+                  its layout.
+                </p>
+                <button class="more text-white p-2" data-bs-toggle="modal" data-bs-target="#seemore_3">
+                  See More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="quality">
+      <h2 class="text-center my-5">We're Providing Best Quality Service</h2>
+      <div class="position-relative quality-holder d-flex justify-content-center align-items-center flex-column">
+        <h3 class="text-white">Clean And Quality</h3>
+        <p class="my-5 text-white w-50 text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut
+          aperiam alias, molestiae quasi illum dolor debitis modi expedita,
+          tenetur ipsam consequatur sunt reiciendis perspiciatis sed rem esse
+          ratione velit.
+        </p>
+      </div>
+    </section>
+    <section id="choose">
+      <h2 class="text-center my-5">Why Choose Us?</h2>
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center gap-5">
+          <div class="col-auto">
+            <div class="card" style="width: 18rem">
+              <div class="card-body text-center">
+                <h5 class="card-title">Trusted Service</h5>
 
-    <div
-      class="modal fade"
-      id="seemore_1"
-      tabindex="-1"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      role="dialog"
-      aria-labelledby="modalTitleId"
-      aria-hidden="true"
-    >
-      <div
-        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
-        role="document"
-      >
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalTitleId">Express Exterior</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6 col-md-12 text-center">
-                  <img
-                    src="assets/images/CleanCars_11.jpg"
-                    class="img-fluid"
-                    width="400"
-                    alt="service"
-                  />
-                </div>
-                <div class="col-lg-6 col-md-12 lh-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Adipisci in, dolorum recusandae sed facilis, nulla excepturi
-                  voluptatem corrupti autem nihil, quo veniam? Maiores
-                  consequuntur reiciendis, sequi quas voluptas iste nobis
-                  quaerat ratione placeat, suscipit tempore aliquam nulla
-                  assumenda dicta, inventore at pariatur eos. Quam nobis, harum
-                  nihil debitis excepturi, sapiente quis voluptatem est eveniet
-                  animi repellendus.
-                </div>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dicta inventore molestias voluptatem at quia quae illo
+                  deleniti quas autem veniam quisquam neque fuga maiores velit
+                  eos ducimus, unde omnis aliquid!
+                </p>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="modal fade"
-      id="seemore_2"
-      tabindex="-1"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      role="dialog"
-      aria-labelledby="modalTitleId"
-      aria-hidden="true"
-    >
-      <div
-        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
-        role="document"
-      >
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalTitleId">Auto Detailing</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6 col-md-12 text-center">
-                  <img
-                    src="assets/images/CleanCars_14.jpg"
-                    class="img-fluid"
-                    width="400"
-                    alt="service"
-                  />
-                </div>
-                <div class="col-lg-6 col-md-12 lh-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Adipisci in, dolorum recusandae sed facilis, nulla excepturi
-                  voluptatem corrupti autem nihil, quo veniam? Maiores
-                  consequuntur reiciendis, sequi quas voluptas iste nobis
-                  quaerat ratione placeat, suscipit tempore aliquam nulla
-                  assumenda dicta, inventore at pariatur eos. Quam nobis, harum
-                  nihil debitis excepturi, sapiente quis voluptatem est eveniet
-                  animi repellendus.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="modal fade"
-      id="seemore_3"
-      tabindex="-1"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      role="dialog"
-      aria-labelledby="modalTitleId"
-      aria-hidden="true"
-    >
-      <div
-        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
-        role="document"
-      >
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalTitleId">Full Service Carwash</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6 col-md-12 text-center">
-                  <img
-                    src="assets/images/CleanCars_17.jpg"
-                    class="img-fluid"
-                    width="400"
-                    alt="service"
-                  />
-                </div>
-                <div class="col-lg-6 col-md-12 lh-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Adipisci in, dolorum recusandae sed facilis, nulla excepturi
-                  voluptatem corrupti autem nihil, quo veniam? Maiores
-                  consequuntur reiciendis, sequi quas voluptas iste nobis
-                  quaerat ratione placeat, suscipit tempore aliquam nulla
-                  assumenda dicta, inventore at pariatur eos. Quam nobis, harum
-                  nihil debitis excepturi, sapiente quis voluptatem est eveniet
-                  animi repellendus.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+          <div class="col-auto">
+            <div class="card" style="width: 18rem">
+              <div class="card-body text-center">
+                <h5 class="card-title">Talented Workers</h5>
 
-    <script src="assets/js/bootstrap.js"></script>
-  </body>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dicta inventore molestias voluptatem at quia quae illo
+                  deleniti quas autem veniam quisquam neque fuga maiores velit
+                  eos ducimus, unde omnis aliquid!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="card" style="width: 18rem">
+              <div class="card-body text-center">
+                <h5 class="card-title">Organic Products</h5>
+
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dicta inventore molestias voluptatem at quia quae illo
+                  deleniti quas autem veniam quisquam neque fuga maiores velit
+                  eos ducimus, unde omnis aliquid!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2 class="text-center my-5">Testimonial</h2>
+      <div class="w-75 mx-auto">
+        <div class="card mx-auto">
+          <div class="container-fluid">
+            <div class="row p-3">
+              <div class="col-lg-3 col-md-12 text-center">
+                <img src="assets/images/CleanCars_25.jpg" class="img-thumbnail" alt="testimonial" />
+              </div>
+              <div class="col-lg-9 col-md-12 my-2">
+                <p class="text-wrap">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Omnis, modi nisi quasi exercitationem labore neque excepturi
+                  quos voluptates doloribus ratione dolorum. Fugiat optio,
+                  nostrum provident nemo qui inventore exercitationem atque?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Omnis, modi nisi quasi exercitationem labore neque excepturi
+                  quos voluptates doloribus ratione dolorum. 3
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center my-5">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="mt-5" id="contact">
+    <div class="container-xl mx-auto footer-content">
+      <div class="row py-5 d-flex justify-content-center">
+        <div class="my-3 col-lg-3 col-md-6 col-sm-12 contact-us d-flex align-items-center flex-column">
+          <h6>Contact Us</h6>
+          <ul class="lh-lg">
+            <li class="location">Location</li>
+            <li class="call">Call +0123456789</li>
+            <li class="mail">sample@gmail.com</li>
+          </ul>
+        </div>
+        <div class="my-3 col-lg-3 col-md-6 col-sm-12 d-flex align-items-center flex-column useful">
+          <h6>Useful links</h6>
+          <ul class="lh-lg">
+            <li><a href="#">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#quality">Quality</a></li>
+            <li><a href="#choose">Choose</a></li>
+            <li><a href="#testimonials">Testimonial</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="my-3 col-lg-3 col-md-6 col-sm-12 d-flex align-items-center flex-column">
+          <h6>Opening Time</h6>
+          <p>Mon : 07:00am to 09:00pm</p>
+          <p>Mon : 07:00am to 09:00pm</p>
+          <p>Mon : 07:00am to 09:00pm</p>
+        </div>
+        <div class="my-3 col-lg-3 col-md-6 col-sm-12 d-flex align-items-center flex-column">
+          <h6>Newsletter</h6>
+          <form action="#" method="">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email" required />
+            <div class="text-center">
+              <button type="submit" class="subscribe mt-2">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-center pb-5">
+        <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/CleanCars_40.png" alt="icon" /></a>
+        <a href="https://twitter.com/?lang=en" target="_blank"><img src="assets/images/CleanCars_42.png" alt="icon" /></a>
+        <a href="https://www.linkedin.com/login" target="_blank"><img src="assets/images/CleanCars_44.png" alt="icon" /></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/CleanCars_46.png" alt="icon" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="seemore_1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitleId">Express Exterior</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 text-center">
+                <img src="assets/images/CleanCars_11.jpg" class="img-fluid" width="400" alt="service" />
+              </div>
+              <div class="col-lg-6 col-md-12 lh-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci in, dolorum recusandae sed facilis, nulla excepturi
+                voluptatem corrupti autem nihil, quo veniam? Maiores
+                consequuntur reiciendis, sequi quas voluptas iste nobis
+                quaerat ratione placeat, suscipit tempore aliquam nulla
+                assumenda dicta, inventore at pariatur eos. Quam nobis, harum
+                nihil debitis excepturi, sapiente quis voluptatem est eveniet
+                animi repellendus.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="seemore_2" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitleId">Auto Detailing</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 text-center">
+                <img src="assets/images/CleanCars_14.jpg" class="img-fluid" width="400" alt="service" />
+              </div>
+              <div class="col-lg-6 col-md-12 lh-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci in, dolorum recusandae sed facilis, nulla excepturi
+                voluptatem corrupti autem nihil, quo veniam? Maiores
+                consequuntur reiciendis, sequi quas voluptas iste nobis
+                quaerat ratione placeat, suscipit tempore aliquam nulla
+                assumenda dicta, inventore at pariatur eos. Quam nobis, harum
+                nihil debitis excepturi, sapiente quis voluptatem est eveniet
+                animi repellendus.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="seemore_3" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitleId">Full Service Carwash</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 text-center">
+                <img src="assets/images/CleanCars_17.jpg" class="img-fluid" width="400" alt="service" />
+              </div>
+              <div class="col-lg-6 col-md-12 lh-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci in, dolorum recusandae sed facilis, nulla excepturi
+                voluptatem corrupti autem nihil, quo veniam? Maiores
+                consequuntur reiciendis, sequi quas voluptas iste nobis
+                quaerat ratione placeat, suscipit tempore aliquam nulla
+                assumenda dicta, inventore at pariatur eos. Quam nobis, harum
+                nihil debitis excepturi, sapiente quis voluptatem est eveniet
+                animi repellendus.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E30PKNK93C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E30PKNK93C');
+  </script>
+
+</body>
+
 </html>
